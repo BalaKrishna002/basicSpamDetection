@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        background-color: #dfdfdf;
+        text-shadow: 2px 2px 8px rgb(113, 167, 214);
+        color: rgb(227, 250, 242);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        box-sizing: border-box;
+      }
+      .content{
+        position: absolute;
+        top: 100px;
+        left: 390px;
+        height: 250px;
+        width: 400px;
+        padding: 3px;
+      }
+      
+      #submit{
+        background-color: rgb(121, 212, 206);
+        height: 30px;
+        width: 90px;
+        border-radius: 5px;
+        border: 1px solid rgb(51, 131, 201);
+        color: rgb(227, 250, 242);
+        
+      }
+     #email{
+      height: 100px;
+      width: 400px;
+      border: 1px solid rgb(3, 110, 146);
+      box-shadow: 2px 2px 8px rgb(113, 167, 214);
+      border-radius: 10px;
+     }
+     h2{
+      font-size: 40px;
+     }
+     label{
+      font-size: larger;
+     }
+
+    </style>
+</head>
+<body>
+    
+  <div class="content">
+    <h2>SPAM DETECTION</h2>
+    <div class="form">
+      <form action="/submit" method='post'>
+        <label for="email">Enter email content:</label><br><br>
+        <textarea name="email" id="email" placeholder="Enter your email...."></textarea><br><br>
+        <input type="submit" value="Submit" id="submit">
+     </form>
+    </div>
+  </div> 
+</body>
+</html>
